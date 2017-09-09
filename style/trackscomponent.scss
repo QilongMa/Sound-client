@@ -1,0 +1,389 @@
+.track-details-container {
+    margin: 40px 80px;
+}
+
+.comment {
+    display: flex;
+    padding: 10px;
+    border-bottom: 1px solid #e3e3e3;
+    border-left: 1px solid #e3e3e3;
+    border-right: 1px solid #e3e3e3;
+    font-size: 11px;
+}
+
+.comment-image {
+    width: 24px;
+    height: 24px;
+    margin-right: 20px;
+    border-radius: 50%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.comment-info {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.comment-comment {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+}
+
+.comment-username {
+    color: #ccc;
+}
+
+.comment-time {
+    align-items: center;
+}
+
+.song{
+    width: 100%;
+}
+
+.card{
+    background-color: #fff;
+    border: 1px solid #e3e3e3
+}
+
+.col-1-6 {
+    width: 20%;
+}
+
+.col-7-10 {
+    width: 70%;
+}
+
+*, :after, :before {
+    box-sizing: border-box;
+}
+
+.col-3-10 {
+    width: 30%;
+}
+
+.comments-header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #e3e3e3;
+}
+
+.grid {
+    width: 100%;
+}
+
+.comments-header-title {
+    flex: 1;
+}
+
+.sidebar {
+    float: right;
+    position: fixed;
+    height: 100%;
+    width: 351px;
+}
+
+.sidebar-content {
+    max-height: 500px;
+    overflow: scroll;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.song--info--wrap {
+    margin: 10px 20px 0 0;
+    flex: 1;
+    overflow: hidden;
+}
+
+.song-image {
+    width: 120px;
+    height: 120px;
+    margin: 10px 20px 10px 10px;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-shrink: 0;
+}
+
+.song-image:hover{
+    cursor: pointer;
+}
+
+.song-title {
+    display: block;
+    font-size: 20px;
+    font-weight: 300;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    flex-grow: 0;
+}
+
+.tab-content {
+    margin-top: 20px;
+    margin-bottom: 80px;
+    background-color: #fff;
+}
+
+.content {
+    margin: 40px 0 80px;
+}
+
+.song-main {
+    display: flex;
+}
+
+.song-waveform .waveform, .song-waveform .waveform .waveform-image-container {
+    height: 100%;
+}
+
+.song-waveform {
+    width: 200px;
+    //height: 142px;
+    border-left: 1px solid #e3e3e3;
+    flex-shrink: 0;
+}
+
+.song-list-item {
+    display: flex;
+    flex-direction: row;
+    border-top: 1px solid #e3e3e3;
+    border-left: 1px solid #e3e3e3;
+    border-right: 1px solid #e3e3e3;
+}
+
+.song-list-item:last-child {
+    border-bottom: 1px solid #e3e3e3;
+}
+
+.song-list-item-info-wrap {
+    margin: 10px 20px 0 0;
+    flex: 1;
+    overflow: hidden;
+}
+
+.song-list-item-info {
+    width: 100%;
+}
+
+.song-list-item-title {
+    display: block;
+    color: #222;
+    font-size: 14px;
+    font-weight: 300;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    flex-shrink: 0;
+}
+
+.song-list-item-info-extra {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.song-list-item-stats {
+    flex: 1;
+    margin-left: 20px;
+    font-size: 11px;
+    color: #ccc;
+}
+
+.song-list-item-waveform {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    width: 200px;
+    border-left: 1px solid #e3e3e3;
+}
+
+.song-list-item-image {
+    width: 60px;
+    height: 60px;
+    margin: 10px 20px 10px 10px;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-shrink: 0;
+}
+
+.song-list-item-waveform .waveform, .song-list-item-waveform .waveform .waveform-image-container {
+    height: 100%;
+}
+
+.song-list-item-user {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.waveform-image-container:hover .waveform-play-highlight, .waveform-image-container:hover .waveform-play-highlight-icon {
+    opacity: 1;
+}
+
+.waveform-image-container:hover {
+    cursor: pointer;
+}
+
+.waveform-play-highlight-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    color: #a6d2a5;
+    font-size: 20px;
+}
+
+.song-user {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.song-card-container:hover .toggle-player {
+    opacity: 0.7;
+}
+
+.song-user-image {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    margin-right: 10px;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.song-stats {
+    font-size: 14px;
+    color: #ccc;
+}
+
+.song-username {
+    font-size: 14px;
+}
+
+.toggle-play-button:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.toggle-play-button-detail {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    transition: background-color .2s ease-in-out;
+}
+
+.toggle-play-button-detail-icon{
+    opacity: 0;
+    transition: opacity .2s ease-in-out;
+}
+
+.toggle-play-button-detail:hover {
+    background-color: rgba(0,0,0,.8);
+    cursor: pointer;
+}
+
+.toggle-play-button-detail:hover .toggle-play-button-detail-icon {
+    opacity: 1;
+}
+
+.waveform {
+    width: 100%;
+}
+
+.waveform-canvas {
+    display: none;
+}
+
+.waveform-image-container {
+    width: 100%;
+    position: relative;
+}
+
+.waveform-image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    flex-shrink: 0;
+}
+
+.waveform-image-bg, .waveform-seek-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+
+.waveform-play-highlight, .waveform-play-highlight-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all .2s ease-in-out;
+}
+
+.waveform-play-highlight, .waveform-play-highlight-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all .2s ease-in-out;
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    transition-delay: initial;
+}
+
+.waveform-play-highlight, .waveform-play-highlight-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all .2s ease-in-out;
+}
+
+.waveform-play-highlight {
+    background-color: rgba(0, 0, 0, 0.27);
+    z-index: 0;
+}
+
+.waveform-image:hover {
+    background-color: black;
+}
+
+.waveform-canvas {
+    display: none;
+}
+
+element.style {
+}
+
+
+.song-stats-icon {
+    margin-right: 16px;
+    & i{
+        margin-right: 4px;
+    }
+}

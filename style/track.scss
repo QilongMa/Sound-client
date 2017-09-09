@@ -1,0 +1,269 @@
+$fontColor: #3a3f41;
+
+.track-list-item {
+
+  height: 64px;
+  margin: 10px 0;
+  padding: 1px;
+  border: 1px solid #e3e3e3;
+  position: relative;
+  color: $fontColor;
+
+  & .track-container {
+    display: flex;
+  }
+
+  & .track-list-item-image {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+    background-size: cover;
+    flex-shrink: 0;
+    border: 1px solid #e3e3e3;
+  }
+
+  & .toggle-play-button-detail {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    transition: background-color .2s ease-in-out;
+
+    & .toggle-play-button-detail-icon {
+      opacity: 0;
+      transition: opacity .2s ease-in-out;
+    }
+
+    &:hover {
+      background-color: rgba(0,0,0,.7);
+      cursor: pointer;
+      opacity: 1;
+
+      & .toggle-play-button-detail-icon {
+        opacity: 1;
+        color: white;
+      }
+    }
+  }
+
+  & .track-list-item-info {
+    padding: 0 5px 5px 5px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-between;
+
+    & .track-list-item-info-header, .track-list-item-info-footer {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    & .track-list-item-title {
+      display: flex;
+
+      & .track-user {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        & .track-user-title-container {
+          display: flex;
+        }
+
+        & .track-user-image {
+          flex: 1;
+          width: 24px;
+          height: 24px;
+          border-radius: 50%;
+          margin-right: 10px;
+          background-size: cover;
+        }
+        & .track-user-card {
+          overflow: hidden;
+          border: 1px solid red;
+          & .track-user-username {
+            font-size: 14px;
+            text-decoration: none;
+            color:#3a3f41
+          }
+
+          & .track-user-title {
+
+          }
+        }
+      }
+    }
+
+    & .track-duration {
+      padding-right: 5px;
+    }
+
+    & .track-list-item-stats {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      font-size: 14px;
+      color: #3a3f41;
+    }
+
+    & .track-stats-icon {
+      width: 100px;
+      margin-right: 16px;
+      display: inline-block;
+      & i{
+        margin-right: 4px;
+      }
+    }
+
+    & .comment-button {
+      border: 1px solid #e3e3e3;
+      border-radius: 5px;
+      padding: 2px 10px 2px 10px;
+
+      & i {
+        margin-left: 10px;
+      }
+
+      &:hover {
+        background: #e3e3e3;
+        color: #ffffff;
+        cursor: pointer;
+      }
+    }
+  }
+
+}
+
+.track-grid-item {
+  width: 20%;
+  padding: 10px;
+  display: block;
+  float: left;
+  min-height: 1px;
+  min-width: 175px;
+
+  & .track-container {
+    border: 1px solid #e3e3e3;
+    padding: 10px;
+
+  }
+
+  & .track-list-item-image {
+    position: relative;
+    display: block;
+    width: 100%;
+    transition: .5s ease;
+    height: 70px;
+    margin-bottom: 10px;
+    background-position: 50%;
+    opacity: 1;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    & .toggle-play-button-detail {
+      position: absolute;
+      opacity: 0;
+      background-color: #e3e3e3;
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+      transition: .5s ease;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+
+      & .toggle-play-button-detail-icon {
+        position: absolute;
+        overflow: hidden;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+      }
+
+      &:hover {
+        background-color: rgba(0,0,0,.7);
+        cursor: pointer;
+        opacity: 1;
+
+        & .toggle-play-button-detail-icon {
+          opacity: 1;
+          color: white;
+        }
+      }
+    }
+  }
+
+  & .track-list-item-info {
+    position: relative;
+    width:100%;
+
+    & .track-list-item-info-header {
+    }
+    & .track-list-item-info-footer {
+      display: none;
+    }
+    & .track-list-item-title {
+      font-size: 11px;
+      & .track-user {
+        display: flex;
+        & .track-user-image-container {
+          display: flex;
+          align-items: center;
+          & .track-user-image {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            margin-right: 10px;
+            background-position: 50%;
+            background-repeat: no-repeat;
+            background-size: cover;
+          }
+        }
+        & .track-user-title-container {
+          position: relative;
+          flex: 1;
+          width: 100%;
+          overflow: hidden;
+
+          & .track-user-username {
+
+          }
+
+          & .track-delimma {
+            display: none;
+          }
+
+          & .track-user-title {
+            width: 100%;
+            overflow: hidden;
+            white-space: nowrap;
+
+            a {
+              width: 100%;
+            }
+          }
+        }
+      }
+
+    }
+
+    & .track-duration {
+      display: none;
+    }
+
+    & .track-list-item-stats {
+      display: none;
+    }
+
+    & .comment-button {
+      display: none;
+    }
+  }
+}

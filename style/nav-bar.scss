@@ -1,0 +1,118 @@
+.nav {
+    height: 50px;
+    background-color: #3a3f41;
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.nav-nav-item-link.active {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-nav-item-link {
+    display: inline-block;
+    margin: 10px 30px;
+    color: hsla(0,0%,100%,.5);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.float-left {
+    float: left;
+}
+.nav-nav {
+    display: table;
+}
+.nav-nav, .nav .container {
+    height: 100%;
+}
+
+.float-right {
+    float: right;
+}
+
+.nav-search {
+    position: relative;
+    background-color: #2b2b2b;
+    border-radius: 3px;
+    width: 290px;
+    display: inline-block;
+}
+
+.nav-search i {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    color: gray;
+    pointer-events: none;
+}
+
+input {
+    -webkit-appearance: textfield;
+    background-color: white;
+    -webkit-rtl-ordering: logical;
+    user-select: text;
+    cursor: auto;
+    padding: 1px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: initial;
+    border-image: initial;
+}
+input, textarea, select, button {
+    text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    margin: 0em;
+    font: 13.3333px Arial;
+}
+input, textarea, select, button, meter, progress {
+    -webkit-writing-mode: horizontal-tb;
+}
+
+.nav-nav-item {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+input[type=text].nav-search-input {
+    width: 290px;
+    padding: 6px 10px 6px 30px;
+    color: #e3e3e3;
+    font-weight: 300;
+    background-color: transparent;
+}
+input[type=text] {
+    display: inline-block;
+    padding: 0 .875rem;
+    border: none;
+    color: #222;
+    text-align: left;
+    font-family: Arial;
+    font-size: 14px;
+    outline: 0;
+    border-radius: 3px;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+.nav-logo{
+    margin-left: 30px;
+}
+
+i.fa.fa-user.fa-2x.sign-in:hover {
+    cursor: pointer;
+    color: antiquewhite;
+}

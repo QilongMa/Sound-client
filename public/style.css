@@ -1,0 +1,10 @@
+body{
+    background-color: white;
+    width:100%;
+    height:auto;
+}
+.body-container{
+    width:80%;
+    /*padding-top: 60px;*/
+    margin: auto;
+}
