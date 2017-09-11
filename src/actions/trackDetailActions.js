@@ -4,7 +4,7 @@ import axios from 'axios';
 export function getTrackDetails(id) {
     return function (dispatch) {
         const trackId = id;
-        const URL = `http://api.soundcloud.com/tracks/${trackId}?client_id=a281614d7f34dc30b665dfcaa3ed7505`;
+        const URL = `https://api.soundcloud.com/tracks/${trackId}?client_id=a281614d7f34dc30b665dfcaa3ed7505`;
         axios.get(URL)
             .then(function (response) {
                 let track = response.data;
@@ -23,7 +23,7 @@ export function getTrackDetails(id) {
 }
 
 function getRelatedTracks(track, dispatch) {
-    axios.get(`http://api.soundcloud.com/users/${track.user.id}/tracks?client_id=${CLIENT_ID}`)
+    axios.get(`https://api.soundcloud.com/users/${track.user.id}/tracks?client_id=${CLIENT_ID}`)
         .then(function (response) {
             let tracks = response.data;
             dispatch({
@@ -42,7 +42,7 @@ function getRelatedTracks(track, dispatch) {
 
 export function getComments(trackId) {
     return function(dispatch) {
-        axios.get(`http://api.soundcloud.com/tracks/${trackId}/comments?client_id=a281614d7f34dc30b665dfcaa3ed7505`)
+        axios.get(`https://api.soundcloud.com/tracks/${trackId}/comments?client_id=a281614d7f34dc30b665dfcaa3ed7505`)
             .then(function (response) {
                 const comments = response.data;
                 dispatch({
